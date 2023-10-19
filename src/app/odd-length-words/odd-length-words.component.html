@@ -1,0 +1,8 @@
+
+<div class="container">
+    <h5 class="text-center">Λέξεις Μονού Μήκους:</h5>
+    <ul *ngIf="oddWords.length > 0; else noWords">
+        <p *ngFor="let word of oddWords">{{ word }}</p>
+    </ul>
+    <ng-template #noWords>Δεν υπάρχουν</ng-template>
+</div>

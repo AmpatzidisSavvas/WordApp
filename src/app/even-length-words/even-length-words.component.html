@@ -1,0 +1,8 @@
+
+<div class="container">
+    <h5 class="text-center">Λέξεις Ζυγού Μήκους:</h5>
+    <ul *ngIf="evenWords.length > 0; else noWords">
+        <p *ngFor= "let word of evenWords">{{ word }} </p>
+    </ul>
+    <ng-template #noWords >Δεν υπάρχουν</ng-template>
+</div>

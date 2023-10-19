@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-exercise-0';
+
+  evenWords: string[] = [];
+  oddWords: string[] = [];
+  
+
+  onWordSubmitted(text: string) {
+
+    const words = text.split(' ');
+
+    for (const word of words) {
+      if (word.length % 2 === 0) {
+        this.evenWords.push(word);
+      } else {
+        this.oddWords.push(word);
+      }
+    }
+  }
 }
