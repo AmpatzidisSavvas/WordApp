@@ -1,1 +1,1 @@
-Εφαρμογή που χωρίζει τις εισαγώμενες λέξεις ανάλογα με το μήκος τους σε Λέξεις Μονού Μήκους και Λέξεις Ζυγού Μήκους.
+Application that divides input words according to their length into Odd-Length Words and Even-Length Words.
